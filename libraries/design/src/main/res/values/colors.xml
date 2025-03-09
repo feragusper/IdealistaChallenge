@@ -1,0 +1,24 @@
+<resources>
+    <!-- Primary color palette (Light Mode) -->
+    <color name="colorPrimary">#DFEF6D</color> <!-- Idealista yellow -->
+    <color name="colorPrimaryDark">#B1D004</color> <!-- Darker variant of primary -->
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorPrimaryContainer">#FFF176</color>
+    <color name="colorOnPrimaryContainer">#000000</color>
+
+    <!-- Secondary color palette (Light Mode) -->
+    <color name="colorSecondary">#B52682</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#B2DFDB</color>
+    <color name="colorOnSecondaryContainer">#000000</color>
+
+    <!-- Background and surface colors (Light Mode) -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <!-- Error colors (Light Mode) -->
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="colorSurfaceContainerHighest">#F5F5F5</color>
+</resources>

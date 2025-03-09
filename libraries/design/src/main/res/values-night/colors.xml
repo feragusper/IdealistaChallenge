@@ -1,0 +1,24 @@
+<resources>
+    <!-- Primary color palette (Dark Mode) -->
+    <color name="colorPrimary">#FFD600</color> <!-- Same Idealista yellow -->
+    <color name="colorPrimaryDark">#A38500</color> <!-- Darker variant for dark mode -->
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorPrimaryContainer">#C7A600</color>
+    <color name="colorOnPrimaryContainer">#FFFFFF</color>
+
+    <!-- Secondary color palette (Dark Mode) -->
+    <color name="colorSecondary">#009688</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSecondaryContainer">#48A999</color>
+    <color name="colorOnSecondaryContainer">#FFFFFF</color>
+
+    <!-- Background and surface colors (Dark Mode) -->
+    <color name="colorSurface">#121212</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+
+    <!-- Error colors (Dark Mode) -->
+    <color name="colorError">#CF6679</color>
+    <color name="colorOnError">#000000</color>
+
+    <color name="colorSurfaceContainerHighest">#121212</color>
+</resources>

@@ -31,3 +31,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "IdealistaChallenge"
 include(":app")
+include(":libraries:design")
