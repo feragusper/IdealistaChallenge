@@ -9,6 +9,7 @@ androidxActivity = "1.10.1"
 androidxComposeCompiler = "1.5.15"
 androidxLifecycle = "2.8.7"
 appcompat = "1.7.0"
+cardview = "1.0.0"
 coilCompose = "2.7.0"
 composeBom = "2025.02.00"
 constraintlayout = "2.2.1"
@@ -45,6 +46,7 @@ android-desugar-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_li
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
 androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
 androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "androidxComposeCompiler" }
 androidx-compose-gradle-plugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }

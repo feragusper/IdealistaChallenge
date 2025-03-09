@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_description_favorite_button">Marcar como favorito</string>
+    <string name="description_title">Comentario del anunciante</string>
+    <string name="view_more">Ver más</string>
+    <string name="characteristics_title">Características básicas</string>
+    <string name="building">Edificio</string>
+    <string name="energy_certification_title">Consumo energético</string>
+    <string name="price">Precio</string>
+    <string name="ad_title">%1$s en %2$s</string>
+    <string name="ad_subtitle">%1$s, %2$s, %3$s</string>
+    <string name="ad_parking">Parking %1$s</string>
+    <string name="ad_included">Incluído</string>
+    <string name="ad_size">%1$s m²</string>
+    <string name="ad_rooms">%1$s hab</string>
+    <string name="ad_detail_title">%1$s en %2$s - Planta %3$sª %4$s</string>
+    <string name="ad_exterior">Exterior</string>
+    <string name="ad_interior">Interior</string>
+    <string name="ad_has_lift">Con ascensor</string>
+    <string name="ad_detail_subtitle">%1$s %2$s</string>
+    <string name="ad_size_and_rooms_and_bathrooms">%1$s m² %2$s hab. %3$s baños</string>
+    <string name="ad_characteristics">• %1$s m² construídos\n\n• %2$s habitaciones\n\n• %3$s baños\n\n• %4$s\n\n• Planta %5$sª\n\n• Estado: %6$s</string>
+    <string name="ad_building">• %1$s\n\n• %2$s\n\n• %3$s</string>
+    <string name="ad_no_lift">Sin ascensor</string>
+    <string name="ad_has_boxroom">Con trastero</string>
+    <string name="ad_no_boxroom">Sin trastero</string>
+    <string name="ad_community_costs">Gastos de comunidad: %1$s</string>
+    <string name="ad_modification_date">Anuncio actualizado hace %1$s días</string>
+    <string name="ad_energy_certification">• Consumo: %1$s\n\n• Emisiones: %2$s</string>
+    <string name="ad_favorite_date">Marcado como favorito el %1$s</string>
+    <string name="ad_price_per_square_meter">%1$s €/m²</string>
+    <string name="ad_has_garden">Jardín</string>
+    <string name="ad_has_swimmingPool">Piscina</string>
+    <string name="ad_has_terrace">Terraza</string>
+    <string name="ad_has_air_conditioning">Aire Acondicionado</string>
+    <string name="ad_apartment">Piso</string>
+    <string name="ad_sale">Venta</string>
+    <string name="ad_rent">Alquiler</string>
+    <string name="ad_renewed">Renovado</string>
+    <string name="view_less">Ver menos</string>
+</resources>
