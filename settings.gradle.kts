@@ -33,3 +33,4 @@ rootProject.name = "IdealistaChallenge"
 include(":app")
 include(":libraries:design")
 include(":libraries:ads:domain")
+include(":libraries:ads:data")
