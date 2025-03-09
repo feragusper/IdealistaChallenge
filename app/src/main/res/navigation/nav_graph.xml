@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_ads">
+
+    <fragment
+        android:id="@+id/nav_ads"
+        android:name="com.feragusper.idealistachallenge.features.ads.list.AdListFragment"
+        android:label="@string/tab_ads"
+        tools:layout="@layout/fragment_ad_list" />
 </navigation>
