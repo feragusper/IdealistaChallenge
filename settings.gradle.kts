@@ -1,23 +1,33 @@
+// =======================================
+// Plugin Management Configuration
+// =======================================
 pluginManagement {
+    // Include custom build logic from the 'build-logic' module
+    includeBuild("build-logic")
+
+    // Define repositories for resolving plugins
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
+        google()             // Google's Maven repository (Android dependencies)
+        mavenCentral()        // Central Maven repository for Java/Kotlin libraries
+        gradlePluginPortal()  // Gradle's official plugin repository
     }
 }
 
-rootProject.name = "Idealista Challenge"
+// =======================================
+// Dependency Resolution Management
+// =======================================
+@Suppress("UnstableApiUsage")
+dependencyResolutionManagement {
+    // Prevents project-level repositories from being used,
+    // enforcing dependency resolution through central repositories only.
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    // Define global repositories for dependency resolution
+    repositories {
+        google()             // Google's Maven repository
+        mavenCentral()        // Central Maven repository
+    }
+}
+
+rootProject.name = "IdealistaChallenge"
 include(":app")
