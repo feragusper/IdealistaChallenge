@@ -31,8 +31,10 @@ android {
 dependencies {
     implementation(project(":libraries:design"))
     implementation(project(":libraries:ads:data"))
+    implementation(project(":libraries:navigation"))
     implementation(project(":features:ads:list"))
     implementation(project(":features:ads:favorites"))
+    implementation(project(":features:ads:detail"))
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)

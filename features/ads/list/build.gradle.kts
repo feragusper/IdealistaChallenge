@@ -15,6 +15,7 @@ dependencies {
     implementation(project(":libraries:ads:domain"))
     implementation(project(":libraries:ads:presentation"))
     implementation(project(":libraries:design"))
+    implementation(project(":libraries:navigation"))
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

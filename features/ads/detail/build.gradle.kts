@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.feragusper.idealistachallenge.features.favorites"
+    namespace = "com.feragusper.idealistachallenge.features.detail.presentation"
 
     buildFeatures {
         viewBinding = true
@@ -12,12 +12,10 @@ android {
 }
 
 dependencies {
-    implementation(project(":libraries:design"))
     implementation(project(":libraries:ads:domain"))
     implementation(project(":libraries:ads:presentation"))
-    implementation(project(":libraries:navigation"))
+    implementation(project(":libraries:design"))
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.material)

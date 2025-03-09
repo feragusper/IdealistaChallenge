@@ -1,12 +1,15 @@
 package com.feragusper.idealistachallenge
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.feragusper.idealistachallenge.databinding.ActivityMainBinding
+import com.feragusper.idealistachallenge.libraries.navigation.NavigationProvider
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -14,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
  * Uses Hilt for dependency injection.
  */
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), NavigationProvider {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -43,13 +46,25 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-        setupActionBarWithNavController(navController)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(R.id.nav_ads, R.id.nav_favorites)
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.bottomNavigationView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            supportActionBar?.subtitle = ""
+            binding.bottomNavigationView.visibility =
+                if (destination.id == R.id.detailFragment) View.GONE else View.VISIBLE
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
+    override fun navigateToDetail() {
+        navController.navigate(R.id.action_global_detailFragment)
+    }
 }

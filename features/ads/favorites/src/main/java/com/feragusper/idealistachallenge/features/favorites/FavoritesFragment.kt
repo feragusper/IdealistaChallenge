@@ -13,10 +13,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.feragusper.idealistachallenge.features.favorites.databinding.FragmentFavoritesBinding
 import com.feragusper.idealistachallenge.libraries.ads.presentation.AdListAdapter
 import com.feragusper.idealistachallenge.libraries.ads.presentation.AdSummaryUi
+import com.feragusper.idealistachallenge.libraries.navigation.NavigationProvider
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class FavoritesFragment : Fragment() {
@@ -26,6 +28,9 @@ class FavoritesFragment : Fragment() {
 
     private val viewModel: FavoritesViewModel by viewModels()
     private lateinit var adsListAdapter: AdListAdapter
+
+    @Inject
+    lateinit var navigationProvider: NavigationProvider
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,8 +50,7 @@ class FavoritesFragment : Fragment() {
     private fun setupRecyclerView() {
         adsListAdapter = AdListAdapter(
             ads = emptyList(),
-            onClick = {
-            },
+            onClick = { navigationProvider.navigateToDetail() },
             onFavoriteClick = viewModel::toggleFavorite
         )
 
