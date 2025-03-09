@@ -9,4 +9,10 @@
         android:name="com.feragusper.idealistachallenge.features.ads.list.AdListFragment"
         android:label="@string/tab_ads"
         tools:layout="@layout/fragment_ad_list" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.feragusper.idealistachallenge.features.favorites.FavoritesFragment"
+        android:label="@string/tab_favorites"
+        tools:layout="@layout/fragment_favorites" />
 </navigation>

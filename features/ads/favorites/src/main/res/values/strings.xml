@@ -1,0 +1,5 @@
+<resources>
+    <string name="empty_favorites_title">No tienes favoritos</string>
+    <string name="empty_favorites_message">Explora los anuncios y guarda los que más te gusten aquí.</string>
+    <string name="empty_state_icon">Ícono de estado vacío</string>
+</resources>
