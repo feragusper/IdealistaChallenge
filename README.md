@@ -42,17 +42,17 @@ Here are some previews of the app in both **Light Mode** and **Dark Mode**.
 ### 🏡 Ads
 | Light Mode                            | Dark Mode                           |
 |---------------------------------------|-------------------------------------|
-| ![Listings Light](misc/ads_light.png) | ![Listings Dark](misc/ads_dark.png) |
+| <img src="misc/ads_light.png" width="250"> | <img src="misc/ads_dark.png" width="250"> |
 
 ### ⭐ Favorites
 | Light Mode | Dark Mode |
 |------------|------------|
-| ![Favorites Light](misc/favorites_light.png) | ![Favorites Dark](misc/favorites_dark.png) |
+| <img src="misc/favorites_light.png" width="250"> | <img src="misc/favorites_dark.png" width="250"> |
 
 ### 🏠 Details
 | Light Mode                              | Dark Mode                             |
 |-----------------------------------------|---------------------------------------|
-| ![Detail Light](misc/details_light.png) | ![Detail Dark](misc/details_dark.png) |
+| <img src="misc/details_light.png" width="250"> | <img src="misc/details_dark.png" width="250"> |
 
 ---
 
